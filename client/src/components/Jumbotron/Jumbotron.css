@@ -1,0 +1,30 @@
+.jumbotron {
+    background-image: url(../../images/pexels-photo-364308.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+
+.text-div {
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(1, 14, 13);
+    font-family: 'Barlow', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(43, 204, 204);
+}
+
+.about {
+    font-weight: bold;
+    margin-top: 250px;
+    font-size: 24px;
+}
+
+
+

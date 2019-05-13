@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Navbar from './components/Navbar';
+import Jumbotron from './components/Jumbotron';
+import Footer from './components/Footer';
+// import Home from "./pages/Home";
 
-function App() {
-  return (
-    <div>
-    <h1>hiiii</h1>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div>          
+          <Navbar />         
+          <Jumbotron />
+          <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
