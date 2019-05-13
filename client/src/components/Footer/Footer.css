@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Barlow', sans-serif;
+  }
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: rgb(43, 204, 204);
+  /* color: black; */
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgb(81, 87, 87);
+}
+
+h5 {
+  font-weight: bold;
+}
