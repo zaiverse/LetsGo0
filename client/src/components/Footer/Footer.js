@@ -13,8 +13,8 @@ const Footer = props => (
       <div className="col l4 offset-l2 s12">
         <h5>policies</h5>
         <ul>
-          <li><a className="" href="#!">privacy policy</a></li>
-          <li><a className="" href="#!">terms and conditions</a></li>
+          <li><a className="" href="#!">Privacy policy</a></li>
+          <li><a className="" href="#!">Terms and conditions</a></li>
         </ul>
       </div>
     </div>
