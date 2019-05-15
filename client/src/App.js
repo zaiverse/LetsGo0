@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from "./pages/Home";
 import Login from "./components/Login";
+import Activities from "./components/Activities";
+import Register from "./components/Register";
 // import Logout from './pages/LogOut';
 
 class App extends Component {
@@ -16,6 +18,8 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/activities" component={Activities} />
               {/* <Route exact path="/login" render={(props) => {
                 return <Login setCurrentUser={this.setCurrentUser} {...props} />
               }} />
