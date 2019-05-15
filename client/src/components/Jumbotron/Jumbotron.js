@@ -5,13 +5,14 @@ const Jumbotron = () => (
     <div className="jumbotron">
         <div className="row">
             <div className="col s12 l4 push-l1">
-                <div class="about">
+                <div className="about">
                 Meet people, who share your passion for different sports activities and make lifetime friends.
                 </div>
                 <br></br>
+                <a href="/register">
                 <button className="btn waves-effect waves-light" type="submit" name="action">register
                 <i className="material-icons right">send</i>
-                </button>
+                </button></a>
             </div>
         </div>  
     </div>
