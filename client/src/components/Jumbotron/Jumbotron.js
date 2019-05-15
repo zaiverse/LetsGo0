@@ -2,7 +2,7 @@ import React from "react";
 import "./Jumbotron.css";
 
 const Jumbotron = () => (
-    <div className="jumbotron">
+    <div className="jumbotron home-page">
         <div className="row">
             <div className="col s12 l4 push-l1">
                 <div className="about">

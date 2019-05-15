@@ -1,0 +1,39 @@
+.profileCover {
+    background-image: url(../../images/yoga.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.card-image {
+    background-image: url(../../images/avatar.png);
+    height: 250px;
+    background-size: cover;
+    background-position: center;    
+}
+
+.activitiesList {
+    margin: 2px;
+    background-color: black;
+}
+
+.card {
+    width: 250px;
+    padding: 5px;
+    margin-top: -200px;
+}
+
+.card-action a {
+    color: rgb(43, 204, 204) !important;
+}
+
+.album {
+    width: 250px;
+    margin: 5px;
+  
+}
+
+.profileCard {
+    padding: 0px;
+}
