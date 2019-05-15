@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Login from "./components/Login";
 import Activities from "./components/Activities";
 import Register from "./components/Register";
+import Profile from './components/Profile';
 // import Logout from './pages/LogOut';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/activities" component={Activities} />
+              <Route exact path="/profile" component={Profile} />
               {/* <Route exact path="/login" render={(props) => {
                 return <Login setCurrentUser={this.setCurrentUser} {...props} />
               }} />
