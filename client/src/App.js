@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from "./pages/Home";
 import Login from "./components/Login";
+import Logout from "./components/Logout";
 import Activities from "./components/Activities";
 import Register from "./components/Register";
 import Profile from './components/Profile';
@@ -19,6 +20,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/logout" component={Logout} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/activities" component={Activities} />
               <Route exact path="/profile" component={Profile} />
