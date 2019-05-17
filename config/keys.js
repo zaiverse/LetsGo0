@@ -1,3 +1,5 @@
-module.exports = {
-    mongoURI: "mongodb://letsgoapp-shard-00-00-59ctt.mongodb.net:27017" 
+ module.exports = {
+    mongoURI: "mongodb+srv://zaiverse:Brendasword1010~@letsgoapp-59ctt.mongodb.net/test?retryWrites=true",
+    secretOrKey: "secret"
   };
+

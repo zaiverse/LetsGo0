@@ -1,8 +1,3 @@
-module.exports = {
-    mongoURI: "mongodb://letsgoapp-shard-00-00-59ctt.mongodb.net:27017",
-    secretOrKey: "secret"
-  };
-
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
