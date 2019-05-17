@@ -15,10 +15,8 @@ class App extends Component {
   render() {
     return (
       <Router>  
-        <div>       
+        <div className="App">       
           <Navbar />  
-
-            <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/logout" component={Logout} />
@@ -26,13 +24,6 @@ class App extends Component {
               <Route exact path="/activities" component={Activities} />
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/search" component={Search} />
-              {/* <Route exact path="/login" render={(props) => {
-                return <Login setCurrentUser={this.setCurrentUser} {...props} />
-              }} />
-              <Route exact path="/logout" component={Logout} />
-              }} /> */}
-            </Switch>
-
           <Footer />
         </div>
       </Router> 
