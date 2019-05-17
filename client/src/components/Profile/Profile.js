@@ -35,7 +35,7 @@ class Profile extends Component {
                             <a href="#">messages</a>
                         </div>
                         <div className="card-action">
-                            <a href="#">search</a>
+                            <a href="/search">search</a>
                         </div>
                     </div>
                 </div>
