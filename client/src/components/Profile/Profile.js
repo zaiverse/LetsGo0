@@ -28,13 +28,13 @@ class Profile extends Component {
                             <a className="activitiesList btn-small">soccer</a>
                         </div>
                         <br></br>
-                        <div className="card-action">
+                        <div className="card-action"><i class="small material-icons">account_box</i>
                             <a href="#">edit profile</a>
                         </div>
-                        <div className="card-action">
+                        <div className="card-action"><i class="small material-icons">chat_bubble</i>
                             <a href="#">messages</a>
                         </div>
-                        <div className="card-action">
+                        <div className="card-action"><i class="small material-icons">search</i>
                             <a href="/search">search</a>
                         </div>
                     </div>
@@ -42,12 +42,12 @@ class Profile extends Component {
                 
                 <div className="col s12 l10 center gallery">
                    <div id="gallery">
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
-                        <img className="album" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>                
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>
+                        <img className="album-photo" src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png"/>                
                    </div>
                  </div>
                  </div>
