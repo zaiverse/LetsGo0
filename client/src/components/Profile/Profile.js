@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import "./Profile.css";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { logoutUser } from "../../actions/authActions";
 
 
-class Profile extends Component {
+class Dashboard extends Component {
+    onLogoutClick = e => {
+      e.preventDefault();
+      this.props.logoutUser();
+    };
 
-    state = {
-
-    }
     render() {
+        const { user } = this.props.auth;
+        console.log(user);
         return (
         <div className="profileCover"> 
             {/* <div className="container"> */}
@@ -18,8 +24,8 @@ class Profile extends Component {
                         <div className="card-image responsive-img">
                         </div>
                         <div className="card-content">
-                            <span className="card-title" id="username">@lilimimina</span>
-                            <p>User intro - I am awesome...</p>
+                            <span className="card-title" id="username">{user.name}</span>
+                            <p>{user.location}</p>
                         </div>
                         <div>
                             <a className="activitiesList btn-small">basketball</a>
@@ -51,6 +57,18 @@ class Profile extends Component {
                    </div>
                  </div>
                  </div>
+                 <button
+              style={{
+                width: "150px",
+                borderRadius: "3px",
+                letterSpacing: "1.5px",
+                marginTop: "1rem"
+              }}
+              onClick={this.onLogoutClick}
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+            >
+              Logout
+            </button>
             </div> 
         // </div> 
     
@@ -58,4 +76,16 @@ class Profile extends Component {
     }
 }
 
-export default Profile;
+Dashboard.propTypes = {
+    logoutUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+  };
+
+  const mapStateToProps = state => ({
+    auth: state.auth
+  });
+
+  export default connect(
+    mapStateToProps,
+    { logoutUser }
+  )(Dashboard);
