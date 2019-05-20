@@ -23,6 +23,11 @@ const UserSchema = new Schema({
     required: true
   },
   profilePic: String,
+  sports: {
+    type: Array,
+    default: [],
+    required: true
+  },
   date: {
     type: Date,
     default: Date.now
