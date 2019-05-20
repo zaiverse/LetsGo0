@@ -21,7 +21,7 @@ class Dashboard extends Component {
                         <div className="card-image responsive-img">
                         </div>
                         <div className="card-content">
-                            <span className="card-title" id="username">{user.name}</span>
+                            <span className="card-title" id="username">{user.username}</span>
                             <p>{user.location}</p>
                         </div>
                         <div>
