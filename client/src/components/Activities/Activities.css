@@ -13,9 +13,9 @@
 }
 
 .sportButton:hover { 
-    background-color: rgb(236, 248, 247); 
+    background-color: #e7e3dd;
   }
 
 .sportButton {
-    background-color: rgb(231, 227, 221);
+    background-color: #e7e3dd;
 }
