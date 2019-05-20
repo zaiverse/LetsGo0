@@ -59,13 +59,13 @@ this.props.registerUser(newUser, this.props.history);
                 <form noValidate onSubmit={this.onSubmit} className="white">
                     <h5>Register</h5>
                     <br></br>
-                    <div class="input-field">
-                    <label for="name">first and last name</label>
+                    <div className="input-field">
+                    <label htmlFor="name">first and last name</label>
                     <input onChange={this.onChange} value={this.state.name} error={errors.name} placeholder="john smith" id="name" type="text" className={classnames("", {invalid: errors.name})}/>
                     <span className="red-text">{errors.name}</span>
                     </div>
-                    <div class="input-field">
-                    <label for="username">Username</label>
+                    <div className="input-field">
+                    <label htmlFor="username">Username</label>
                     <input onChange={this.onChange} value={this.state.username} error={errors.username} placeholder="timjohns23" id="username" type="text" className={classnames("", {invalid: errors.username})}/>
                     <span className="red-text">{errors.username}</span>
                     </div>
