@@ -1,4 +1,13 @@
-.input-field {
-    width: 300px;
+.search {
+    width: 500px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
+
+.material-icons {
+    color: rgb(129, 127, 127) !important;
+}
+
+
+
 

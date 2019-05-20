@@ -47,7 +47,7 @@ this.props.loginUser(userData); // since we handle the redirect within our compo
     render() {
         const { errors } = this.state;
         return (
-            <div className="container login">
+            <div className="container login center">
                 <form noValidate onSubmit={this.onSubmit} className="white">
                     <h5>Log In</h5>
                     <div className="input-field">

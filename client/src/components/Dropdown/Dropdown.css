@@ -1,0 +1,16 @@
+.dropdown {
+    width: 330px;
+}
+
+.filter-activity {
+    margin-top: 5px;
+    width: 330px;
+}
+
+.dropdown-trigger {
+    background-color: rgb(43, 204, 204) !important;
+    height: 60px;
+}
+
+
+
