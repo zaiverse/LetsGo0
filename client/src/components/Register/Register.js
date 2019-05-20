@@ -77,7 +77,7 @@ this.props.registerUser(newUser, this.props.history);
                     <span className="red-text">{errors.email}</span>
                     </div>
                     <div className="input-field">
-                    <label htmlFor="password">password</label>
+                    <label htmlFor="password">password (minimum 6 characters)</label>
                     <input onChange={this.onChange} value={this.state.password} error={errors.password} id="password" type="password" className={classnames("", {invalid: errors.password})}/>
                     <span className="red-text">{errors.password}</span>
                     </div>
