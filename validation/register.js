@@ -5,20 +5,32 @@ module.exports = function validateRegisterInput(data) {
 // Convert empty fields to an empty string so we can use validator functions
   data.name = !isEmpty(data.name) ? data.name : "";
   data.username = !isEmpty(data.username) ? data.username : "";
+  data.userstate = !isEmpty(data.userstate) ? data.userstate : "";
+  data.city = !isEmpty(data.city) ? data.city : "";
+  data.zipcode = !isEmpty(data.zipcode) ? data.zipcode : "";
   data.email = !isEmpty(data.email) ? data.email : "";
   data.password = !isEmpty(data.password) ? data.password : "";
   data.password2 = !isEmpty(data.password2) ? data.password2 : "";
-  data.location = !isEmpty(data.location) ? data.location : "";
 
 // Name checks
   if (Validator.isEmpty(data.name)) {
     errors.name = "Name field is required";
   }
   
-// location checks
-if (Validator.isEmpty(data.location)) {
-    errors.location = "Location field is required";
-  }
+// Name checks
+if (Validator.isEmpty(data.userstate)) {
+  errors.userstate = "Name field is required";
+}
+  // city checks
+if (Validator.isEmpty(data.city)) {
+  errors.city = "State field is required";
+}
+
+// zipcode checks
+if (Validator.isEmpty(data.zipcode)) {
+  errors.zipcode = "State field is required";
+}
+  
   
 // username checks
 if (Validator.isEmpty(data.username)) {
