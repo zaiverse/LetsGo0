@@ -22,13 +22,12 @@ class Dashboard extends Component {
                         </div>
                         <div className="card-content">
                             <span className="card-title" id="username">{user.username}</span>
-                            <p>{user.location}</p>
+                            <p>{user.city}, {user.state} {user.zipcode}</p>
                         </div>
                         <div>
-                            <a className="activitiesList btn-small">basketball</a>
-                            <a className="activitiesList btn-small">football</a>
-                            <a className="activitiesList btn-small">tennis</a>
-                            <a className="activitiesList btn-small">soccer</a>
+                            <a className="activitiesList btn-small">{user.sports[0]}</a>
+                            <a className="activitiesList btn-small">{user.sports[1]}</a>
+                            <a className="activitiesList btn-small">{user.sports[2]}</a>
                         </div>
                         <br></br>
                         <div className="card-action">
