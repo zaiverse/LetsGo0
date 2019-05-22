@@ -9,12 +9,16 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
 
-// router.post("/search", (req, res) => {
-//   User.findAll().then(user => {
-
-//     }
-//   );
-// });
+//for search function
+router.get("/search", (req, res) => {
+  User.findAll().then(user => {
+      if (!user) {
+        return res.status(404).json("User not found");
+      }
+      return res.json(user);
+    }
+  );
+});
 
 // @route POST api/users/register
 // @desc Register user
