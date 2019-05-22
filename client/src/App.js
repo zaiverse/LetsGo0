@@ -10,7 +10,6 @@ import Register from "./components/Register";
 import Profile from './components/Profile';
 import SearchPage from './pages/SearchPage';
 import PrivateRoute from "./components/private-route/PrivateRoute";
-// import Logout from './pages/LogOut';
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -51,7 +50,6 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/activities" component={Activities} />
               <Route exact path="/search" component={SearchPage} />
-              {/* <Route exact path="/profile" component={Profile} /> */}
               <Switch>
               <PrivateRoute exact path="/profile" component={Profile} />
               </Switch>

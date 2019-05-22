@@ -1,6 +1,6 @@
  module.exports = {
-    mongoURI: "mongodb+srv://zaiverse:Brendasword1010~@letsgoapp-59ctt.mongodb.net/test?retryWrites=true",
-    secretOrKey: "isabella2005"
+    mongoURI: "mongodb+srv://lili:isa2005@cluster0-idpyr.mongodb.net/test?retryWrites=true",
+    secretOrKey: "secret"
   };
 
   
