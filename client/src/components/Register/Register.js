@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 import {withRouter} from "react-router-dom";
 import PropTypes from "prop-types";
-import { connect} from "react-redux";
-import { registerUser} from "../../actions/authActions";
+
+import {connect} from "react-redux";
+import {registerUser} from "../../actions/authActions";
+
 import classnames from "classnames";
 
 
@@ -65,33 +67,35 @@ class Register extends Component {
       errors
     } = this.state;
     return ( 
-        <div className="container register">
-          <form noValidate onSubmit={this.onSubmit} className="white">
-              <h5>Register</h5>
-              <br></br>
+        <div className="container register center">
+          <div className="row">
+            <div className=" col l6 push-l3 s12">
+              <form noValidate onSubmit={this.onSubmit} >
+                <br></br>
+              <h5>Register</h5>              
               <div className="input-field">
                 <label htmlFor="name">first and last name</label>
-                <input onChange={this.onChange} value={this.state.name} error={errors.name} placeholder="john smith" id="name" type="text" className={classnames("", {invalid: errors.name})}/>
+                <input onChange={this.onChange} value={this.state.name} error={errors.name} id="name" type="text" className={classnames("", {invalid: errors.name})}/>
                 <span className="red-text">{errors.name}</span>
               </div>
               <div className="input-field">
                 <label htmlFor="username">Username</label>
-                <input onChange={this.onChange} value={this.state.username} error={errors.username} placeholder="timjohns23" id="username" type="text" className={classnames("", {invalid: errors.username})}/>
+                <input onChange={this.onChange} value={this.state.username} error={errors.username} id="username" type="text" className={classnames("", {invalid: errors.username})}/>
                 <span className="red-text">{errors.username}</span>
               </div>
               <div className="input-field">
                 <label htmlFor="email">email</label>
-                <input onChange={this.onChange} value={this.state.email} error={errors.email} placeholder="john@john.com" id="email" type="email" className={classnames("", {invalid: errors.email})}/>
+                <input onChange={this.onChange} value={this.state.email} error={errors.email} id="email" type="email" className={classnames("", {invalid: errors.email})}/>
                 <span className="red-text">{errors.email}</span>
               </div>
               <div className="input-field">
-                <label htmlFor="password">password</label>
-                <input onChange={this.onChange} value={this.state.password} error={errors.password} placeholder="type your password" id="password" type="password" className={classnames("", {invalid: errors.password})}/>
+                <label htmlFor="password">password (minimum 6 characters)</label>
+                <input onChange={this.onChange} value={this.state.password} error={errors.password} id="password" type="password" className={classnames("", {invalid: errors.password})}/>
                 <span className="red-text">{errors.password}</span>
               </div>
               <div className="input-field">
                 <label htmlFor="password2">confirm password</label>
-                <input onChange={this.onChange} value={this.state.password2} error={errors.password2} placeholder="retype password" type="password" id="password2" className={classnames("", {invalid: errors.password2})}/>
+                <input onChange={this.onChange} value={this.state.password2} error={errors.password2} type="password" id="password2" className={classnames("", {invalid: errors.password2})}/>
                 <span className="red-text">{errors.password2}</span>
               </div>
               <div className="input-field">
@@ -116,6 +120,8 @@ class Register extends Component {
                 <button className="btn waves-effect waves-light" type="submit">next<i className="material-icons right">send</i></button>
               </div>
           </form>
+          </div>
+        </div>
       </div>       
     )
   }

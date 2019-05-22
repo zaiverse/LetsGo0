@@ -1,13 +1,23 @@
 .nav-wrapper {
     margin: 0px;
+    padding-bottom: 10px;
     font-family: 'Barlow', sans-serif;
 }
 
-img {
-    width: 180px;
-    vertical-align: middle;
+.logo {
+    width: 160px;
+    /* vertical-align: middle; */
     margin-left: 115px;
-    padding-bottom: 5px;
+    margin-bottom:2px;
+    margin-top:5px;
+}
+
+.ball {
+    height: 54px;
+    margin-bottom:2px;
+    margin-top:5px;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
 }
 
 nav ul a {
@@ -25,11 +35,11 @@ nav {
     background-color: rgb(250, 245, 245);
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     nav .brand-logo {
         left: 20%;
     }
     nav ul a {
         padding: 0 5px;
     }
-}
+} */
