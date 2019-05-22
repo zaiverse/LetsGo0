@@ -15,7 +15,9 @@ class Register extends Component {
       email: "",
       password: "",
       password2: "",
-      location: "",
+      userstate: "",
+      city: "",
+      zipcode: "",
       profilePic: "",
       errors: {}
     };
@@ -48,7 +50,9 @@ class Register extends Component {
       email: this.state.email,
       password: this.state.password,
       password2: this.state.password2,
-      location: this.state.location,
+      userstate: this.state.userstate,
+      city: this.state.city,
+      zipcode: this.state.zipcode,
       profilePic: this.state.profilePic,
     };
 
@@ -93,10 +97,20 @@ class Register extends Component {
                 <span className="red-text">{errors.password2}</span>
               </div>
               <div className="input-field">
-                <input onChange={this.onChange} value={this.state.location} error={errors.location} id="location" type="text" className={classnames("", {invalid: errors.location})}/>
-                <label htmlFor="location">location</label>
-                <span className="red-text">{errors.location}</span>
-              </div>
+                    <label htmlFor="userstate">state</label>
+                    <input onChange={this.onChange} value={this.state.userstate} error={errors.userstate} type="text" id="userstate" className={classnames("", {invalid: errors.userstate})}/>
+                    <span className="red-text">{errors.userstate}</span>
+                    </div>
+                    <div className="input-field">
+                    <label htmlFor="city">city</label>
+                    <input onChange={this.onChange} value={this.state.city} error={errors.city} type="text" id="city" className={classnames("", {invalid: errors.city})}/>
+                    <span className="red-text">{errors.city}</span>
+                    </div>
+                    <div className="input-field">
+                    <label htmlFor="zipcode">zipcode</label>
+                    <input onChange={this.onChange} value={this.state.zipcode} error={errors.zipcode} type="text" id="zipcode" className={classnames("", {invalid: errors.zipcode})}/>
+                    <span className="red-text">{errors.zipcode}</span>
+                    </div>
               <div>
                 <i className="small material-icons" id="uploadPhoto">add_a_photo</i> add a photo
               </div>

@@ -9,6 +9,13 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
 
+// router.post("/search", (req, res) => {
+//   User.findAll().then(user => {
+
+//     }
+//   );
+// });
+
 // @route POST api/users/register
 // @desc Register user
 // @access Public
@@ -28,8 +35,11 @@ router.post("/register", (req, res) => {
           username: req.body.name,
           email: req.body.email,
           password: req.body.password,
-          location: req.body.location,
-          profilePic: req.body.profilePic
+          userstate: req.body.userstate,
+          city: req.body.city,
+          zipcode: req.body.zipcode,
+          profilePic: req.body.profilePic,
+          sports: req.body.sports
         });
   // Hash password before saving in database
         bcrypt.genSalt(10, (err, salt) => {
@@ -72,7 +82,10 @@ router.post("/login", (req, res) => {
             id: user.id,
             name: user.name,
             username: user.username,
-            location: user.location
+            userstate: user.userstate,
+            city: user.city,
+            zipcode: user.zipcode,
+            sports: user.sports
           };
   // Sign token
           jwt.sign(
