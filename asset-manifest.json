@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/LetsGo0/static/css/main.5ae16a63.chunk.css",
+    "main.js": "/LetsGo0/static/js/main.1770891f.chunk.js",
+    "main.js.map": "/LetsGo0/static/js/main.1770891f.chunk.js.map",
+    "runtime~main.js": "/LetsGo0/static/js/runtime~main.7f51b65e.js",
+    "runtime~main.js.map": "/LetsGo0/static/js/runtime~main.7f51b65e.js.map",
+    "static/js/2.6f07b7b8.chunk.js": "/LetsGo0/static/js/2.6f07b7b8.chunk.js",
+    "static/js/2.6f07b7b8.chunk.js.map": "/LetsGo0/static/js/2.6f07b7b8.chunk.js.map",
+    "index.html": "/LetsGo0/index.html",
+    "precache-manifest.c5f9197e9192d2ce88a3cf52cacfb1a2.js": "/LetsGo0/precache-manifest.c5f9197e9192d2ce88a3cf52cacfb1a2.js",
+    "service-worker.js": "/LetsGo0/service-worker.js",
+    "static/css/main.5ae16a63.chunk.css.map": "/LetsGo0/static/css/main.5ae16a63.chunk.css.map",
+    "static/media/Profile.css": "/LetsGo0/static/media/background.96f73bd3.svg",
+    "static/media/ball.png": "/LetsGo0/static/media/ball.b581f233.png",
+    "static/media/logo_no_ball.png": "/LetsGo0/static/media/logo_no_ball.da9035ea.png",
+    "static/media/Jumbotron.css": "/LetsGo0/static/media/pexels-photo-364308.fdf3d85d.jpeg"
+  }
+}
