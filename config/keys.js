@@ -1,5 +1,5 @@
  module.exports = {
-    mongoURI: "mongodb+srv://lili:isa2005@cluster0-idpyr.mongodb.net/test?retryWrites=true",
+    mongoURI: "mongodb://bees12:ilovebees12@ds263146.mlab.com:63146/heroku_ltfmrblc",
     secretOrKey: "secret"
   };
 
