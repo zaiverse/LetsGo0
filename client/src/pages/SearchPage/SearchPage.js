@@ -1,21 +1,34 @@
 import React, { Component } from 'react';
-import PropTypes, { func } from "prop-types";
 import Search from "../../components/Search";
 import Dropdown from "../../components/Dropdown";
 import ImageCard from "../../components/ImageCard";
 import SearchButton from "../../components/SearchButton";
-import {setCurrentUser} from "../../actions/authActions";
+import {getUsers} from "../../actions/authActions";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+
 
 class SearchPage extends Component {
 
+  static propTypes = {
+    getUsers: PropTypes.func.isRequired,
+    userInfo: PropTypes.object.isRequired,
+  };
+
+  componentDidMount() {
+    this.props.getUsers();
+  }
+
     render() {
-        // const { user } = this.props;
-        // console.log(user);
+        const { users } = this.props.userInfo;
+        console.log(users);
         return(
             <div>
                 <Search />
                 <Dropdown />
+                {/* {items.map(({ _id, name }) => (
+                  key=_id 
+                ))} */}
                 <SearchButton />
                 <br></br>
                 <ImageCard />
@@ -25,15 +38,12 @@ class SearchPage extends Component {
     }
 }
 
-SearchPage.propTypes = {
-    auth: PropTypes.object.isRequired
-  };
-  
   const mapStateToProps = state => ({
-    auth: state.auth
+    auth: state.auth,
+    userInfo: state.userInfo
   });
   
   export default connect(
     mapStateToProps,
-    { setCurrentUser }
+    { getUsers }
   )(SearchPage);

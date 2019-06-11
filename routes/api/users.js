@@ -9,15 +9,21 @@ const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
 
-//for search function
-router.get("/search", (req, res) => {
-  User.findAll().then(user => {
-      if (!user) {
-        return res.status(404).json("User not found");
-      }
-      return res.json(user);
-    }
-  );
+// //for search function
+// router.get("/pie", (req, res) => {
+//   User.findAll().then(users => {
+//       if (!user) {
+//         return res.status(404).json("User not found");
+//       }
+//       console.log(users);
+//       return res.json(users);
+//     }
+//   );
+// });
+
+router.get('/search', (req, res) => {
+  User.find()
+    .then(users => res.json(users));
 });
 
 // @route POST api/users/register

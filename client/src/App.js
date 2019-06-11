@@ -50,8 +50,8 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/activities" component={Activities} />
               <Switch>
-              <PrivateRoute exact path="/profile" component={Profile} />
               <PrivateRoute exact path="/search" component={SearchPage} />
+              <PrivateRoute exact path="/profile" component={Profile} />
               </Switch>
           <Footer />
         </div>

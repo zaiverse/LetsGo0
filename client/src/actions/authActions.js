@@ -4,8 +4,22 @@ import jwt_decode from "jwt-decode";
 import {
   GET_ERRORS,
   SET_CURRENT_USER,
-  USER_LOADING
+  USER_LOADING,
+  GET_USERS,
+  USERS_LOADING
 } from "./types";
+
+export const getUsers = () => dispatch => {
+  dispatch(setUserLoading());
+  axios
+    .get("/api/users/search")
+    .then(res =>
+      dispatch({
+        type: GET_USERS,
+        payload: res.data
+      })
+    )
+};
 
 // Register User
 export const registerUser = (userData, history) => dispatch => {
@@ -55,6 +69,13 @@ export const setUserLoading = () => {
     type: USER_LOADING
   };
 };
+
+export const setUsersLoading = () => {
+  return {
+    type: USERS_LOADING
+  };
+};
+
 // Log user out
 export const logoutUser = () => dispatch => {
   // Remove token from local storage
